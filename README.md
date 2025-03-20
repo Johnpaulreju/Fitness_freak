@@ -22,6 +22,17 @@ An AI and ML integrated website with visualization and analytics to predict the 
 - **Interactive Progress Graphs**: Displays weekly, monthly, and long-term fitness trends.
 - **Simulation of Future Progress**: Users can adjust workout intensity to see predicted results.
 
+### Analyze, Prediction, and Visualization Components
+- **Prediction Model for Progress Visualization** – Forecasts user progress based on past inputs.
+- **AI-Generated Workout Plans** – Adjusts workouts dynamically based on real-time progress.
+- **Dynamic Goal Adjustment** – Modifies plans automatically if users are ahead or falling behind.
+- **Plateau Detection** – Detects when a user stops making progress and suggests changes.
+- **Exercise Effectiveness Score** – Analyzes workouts based on effort, consistency, and impact.
+- **Calorie Burn Estimation** – Predicts calories burned based on user data.
+- **Heart Rate Integration** (if used) – Tracks trends to assess workout intensity.
+- **Interactive Progress Graphs** – Visualizes fitness trends over time.
+- **Simulation of Future Progress** – Allows users to modify variables and see predicted outcomes.
+
 ### Additional Considerations
 - **Data Visualization**: Use libraries like Chart.js or D3.js for graphing progress.
 - **Database Optimization**: Use MongoDB aggregation for efficient tracking & insights.
