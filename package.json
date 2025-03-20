@@ -1,0 +1,34 @@
+{
+  "name": "fitness_freak",
+  "version": "1.0.0",
+  "description": "An AI and ML integrated website with visualization and analytics to predict the future of your fitness.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Johnpaulreju/Fitness_freak.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Johnpaulreju/Fitness_freak/issues"
+  },
+  "homepage": "https://github.com/Johnpaulreju/Fitness_freak#readme",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.12.1",
+    "nodeman": "^1.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
