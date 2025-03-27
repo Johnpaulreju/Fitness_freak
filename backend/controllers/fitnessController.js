@@ -18,6 +18,52 @@ exports.getUserDetails = async (req, res) => {
     }
 };
 
+// Update fitness data by userId
+exports.updateUserFitness = async (req, res) => {
+    console.log("Received request body:", req.body);
+    const {
+        userId,
+        targetBodyType,
+        targetWeight,
+        targetTimeframe,
+        workoutPlan,
+        dietPlan,
+        caloriesPerDay,
+        proteinIntake,
+        fatIntake,
+        carbIntake,
+        estimatedWeeksToGoal,
+        projectedWeightTrend
+      } = req.body;
+    
+      if (!userId) {
+        return res.status(400).json({ success: false, error: "userId is required" });
+      }
+    
+      try {
+        const updatedData = await User.findOneAndUpdate(
+          { userId },
+          {
+            targetBodyType,
+            targetWeight,
+            targetTimeframe,
+            workoutPlan,
+            dietPlan,
+            caloriesPerDay,
+            proteinIntake,
+            fatIntake,
+            carbIntake,
+            estimatedWeeksToGoal,
+            projectedWeightTrend
+          },
+          { new: true, upsert: true }
+        );
+        res.json({ success: true, data: updatedData });
+      } catch (error) {
+        console.error("Error updating fitness data:", error);
+        res.status(500).json({ success: false, error: error.message });
+      }
+}
 
 
 // Update fitness details in User model

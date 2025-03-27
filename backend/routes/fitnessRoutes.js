@@ -5,5 +5,6 @@ const FitnessController = require("../controllers/fitnessController");
 // Route to save user fitness details
 router.post("/saveFitnessData", FitnessController.saveFitnessData);
 router.get("/getFitnessData/:userId", FitnessController.getUserDetails);
+router.post("/updateFitnessData", FitnessController.updateUserFitness);
 
 module.exports = router;

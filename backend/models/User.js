@@ -31,7 +31,6 @@ const UserSchema = new mongoose.Schema({
     min: { type: Number, default: null },
     max: { type: Number, default: null }
   },
-  
 
   // Goal Selection (User’s Desired Outcome)
   targetBodyType: { type: String, default: "" },
@@ -48,7 +47,7 @@ const UserSchema = new mongoose.Schema({
 
   // Predictive Analysis Output
   estimatedWeeksToGoal: { type: Number, default: null },
-  projectedWeightTrend: { type: Number, default: null },
+  projectedWeightTrend: { type: [Number], default: null }, // Changed to array of numbers
   progressTracker: { type: Object, default: {} }, // Weekly tracking as JSON
 });
 
